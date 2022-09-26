@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Inter"), url("../fonts/Inter-Regular.woff2") format("woff2"),
+        url("../fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Inter"), url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+        url("../fonts/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Inter"), url("../fonts/Inter-Bold.woff2") format("woff2"),
+        url("../fonts/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Inter"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+        url("../fonts/Inter-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Inter"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+        url("../fonts/Inter-ExtraBold.woff") format("woff");
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.body {
+    background: linear-gradient(180deg, #026FD4 0%, #2C2C47 54.17%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: calc(1650px + 15px * 2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@import "components/header.css";
+@import "components/footer.css";

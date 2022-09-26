@@ -1,0 +1,34 @@
+.header {
+    background-color: rgba(1, 24, 72, 0.5);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header__logo {
+    width: 233px;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    margin-left: 103px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
