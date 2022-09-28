@@ -1,11 +1,19 @@
 @font-face {
     font-family: "Inter";
     font-style: normal;
+    font-weight: 300;
+    src: local("Inter"), url("../fonts/Inter-Light.woff2") format("woff2"),
+    url("../fonts/Inter-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
     font-weight: 400;
     src: local("Inter"), url("../fonts/Inter-Regular.woff2") format("woff2"),
         url("../fonts/Inter-Regular.woff") format("woff");
-}
-
+    }
+    
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -13,7 +21,7 @@
     src: local("Inter"), url("../fonts/Inter-SemiBold.woff2") format("woff2"),
         url("../fonts/Inter-SemiBold.woff") format("woff");
 }
-
+    
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -21,23 +29,6 @@
     src: local("Inter"), url("../fonts/Inter-Bold.woff2") format("woff2"),
         url("../fonts/Inter-Bold.woff") format("woff");
 }
-
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 800;
-    src: local("Inter"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
-        url("../fonts/Inter-ExtraBold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 800;
-    src: local("Inter"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
-        url("../fonts/Inter-ExtraBold.woff") format("woff");
-}
-
 
 html {
     box-sizing: border-box;
@@ -47,6 +38,8 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -74,19 +67,11 @@ ul {
     list-style: none;
 }
 
-.body {
-    background: linear-gradient(180deg, #026FD4 0%, #2C2C47 54.17%);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-.wrapper {
-    max-width: calc(1650px + 15px * 2);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
+/*  подключение подулей CSS */
+@import "components/global.css";
 @import "components/header.css";
-@import "components/footer.css";
+@import "components/pageHome/heading.css";
+@import "components/pageHome/opportunities.css";
+@import "components/pageHome/projectsCompany.css";
+@import "components/pageHome/project-founders-network.css";
+@import "components/footer.css"; 

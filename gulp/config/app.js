@@ -8,12 +8,12 @@ export default {
         collapseWhitespace: isProd,
     },
     webpack: {
-        mode: isProd ? "production" : "development",
+        mode: isProd ? "    " : "development",
     },
     imagemin: {
         verbose: true,
     },
     fonter: {
-        formats: ["woff"], //"ttf", "woff", "eot", "svg"
+        formats: ["ttf", "woff", "eot", "svg"],
     },
 };

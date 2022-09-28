@@ -1,0 +1,26 @@
+.home {
+    text-align: center;
+    padding-top: 235px;
+    padding-bottom: 240px;
+}
+
+.home__heading {
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 116px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.home__heading > span {
+    font-weight: 600;
+}
+
+.home__slogan {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    color: #fff;
+    margin-top: 14px;
+}

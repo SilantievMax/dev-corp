@@ -1,0 +1,61 @@
+/* Глобальные стили */
+.body {
+    background: linear-gradient(180deg, #026FD4 0%, #2C2C47 54.17%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: calc(1650px + 100px * 2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 148.52%;
+    color: #FFFFFF;
+}
+
+@media(max-width: 1280px) {
+    .wrapper {
+        max-width: calc(1650px + 60px * 2);
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .heading {
+        font-size: 52px;
+    }
+    
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .wrapper {
+        max-width: calc(1650px + 20px * 2);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .wrapper {
+        max-width: calc(1650px + 10px * 2);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
