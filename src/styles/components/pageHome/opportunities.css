@@ -1,21 +1,8 @@
-.opportunities {
-    padding-top: 135px;
-    padding-bottom: 135px;
-}
-
-.opportunities__heading {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 73px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
 .opportunities__heading::after {
-    content: '';
+    content: "";
     display: block;
     position: relative;
-    background-image: url('../images/opportunities-line.png');
+    background-image: url("../images/opportunities-line.png");
     background-repeat: no-repeat;
     width: 881px;
     height: 20px;
@@ -26,8 +13,8 @@
     margin-top: 158px;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
-
 
 .opportunities__item {
     padding-top: 42px;
@@ -35,7 +22,11 @@
     padding-right: 25px;
     padding-bottom: 25px;
     width: 380px;
-    background: linear-gradient(145.6deg, rgba(130, 130, 207, 0.7) -19.97%, rgba(130, 130, 207, 0.14) 120.8%);
+    background: linear-gradient(
+        145.6deg,
+        rgba(130, 130, 207, 0.7) -19.97%,
+        rgba(130, 130, 207, 0.14) 120.8%
+    );
     box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 20px;
@@ -52,7 +43,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 43px;
 }
 
@@ -60,6 +51,57 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 10px;
+}
+
+@media (max-width: 1280px) {
+    .opportunities__heading::after {
+        left: -428px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .opportunities__heading::after {
+        bottom: 10px;
+    }
+
+    .opportunities__list {
+        margin-top: 88px;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .opportunities__item {
+        display: flex;
+        padding-top: 30px;
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .opportunities__img {
+        width: 183px;
+
+    }
+
+    .opportunities__heading-item {
+        font-size: 26px;
+        margin-top: 0px;
+    }
+
+    .opportunities__descriptions {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .opportunities__list {
+        margin-top: 30px;
+    }
+
+    .opportunities__heading::after {
+        left: -531px;
+    }
 }

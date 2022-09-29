@@ -1,6 +1,6 @@
 /* Глобальные стили */
 .body {
-    background: linear-gradient(180deg, #026FD4 0%, #2C2C47 54.17%);
+    background: linear-gradient(180deg, #026fd4 0%, #2c2c47 54.17%);
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -13,49 +13,73 @@
     padding-right: 100px;
 }
 
+.wrapper_card {
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+
 .heading {
     font-weight: 700;
     font-size: 60px;
     line-height: 73px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .description {
     font-weight: 400;
     font-size: 20px;
     line-height: 148.52%;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-@media(max-width: 1280px) {
+@media (max-width: 1280px) {
     .wrapper {
         max-width: calc(1650px + 60px * 2);
         padding-left: 60px;
         padding-right: 60px;
     }
-    
+
+    .wrapper_card {
+        padding-top: 105px;
+        padding-bottom: 105px;
+    }
+
     .heading {
         font-size: 52px;
     }
-    
+
     .description {
         font-size: 18px;
     }
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
     .wrapper {
         max-width: calc(1650px + 20px * 2);
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .wrapper_card {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .wrapper {
         max-width: calc(1650px + 10px * 2);
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .wrapper_card {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .heading {
+        font-size: 40px;
     }
 }
