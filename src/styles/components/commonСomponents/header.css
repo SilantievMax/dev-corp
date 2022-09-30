@@ -6,6 +6,7 @@
 
 .header__logo {
     width: 233px;
+    min-height: 39px;
 }
 
 .header__wrapper {
