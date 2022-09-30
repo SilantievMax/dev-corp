@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 300;
     src: local("Inter"), url("../fonts/Inter-Light.woff2") format("woff2"),
-    url("../fonts/Inter-Light.woff") format("woff");
+        url("../fonts/Inter-Light.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-weight: 400;
     src: local("Inter"), url("../fonts/Inter-Regular.woff2") format("woff2"),
         url("../fonts/Inter-Regular.woff") format("woff");
-    }
-    
+}
+
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -21,7 +21,7 @@
     src: local("Inter"), url("../fonts/Inter-SemiBold.woff2") format("woff2"),
         url("../fonts/Inter-SemiBold.woff") format("woff");
 }
-    
+
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -44,7 +44,7 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    font-weight: 400
+    font-weight: 400;
 }
 
 a {
@@ -67,11 +67,13 @@ ul {
     list-style: none;
 }
 
-/*  подключение подулей CSS */
+/* Global styles */
 @import "components/global.css";
+/*  подключение модулей CSS */
 @import "components/header.css";
+/* pageHome styles */
 @import "components/pageHome/heading.css";
 @import "components/pageHome/opportunities.css";
 @import "components/pageHome/projectsCompany.css";
 @import "components/pageHome/project-founders-network.css";
-@import "components/footer.css"; 
+@import "components/footer.css";

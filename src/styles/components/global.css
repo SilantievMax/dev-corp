@@ -1,3 +1,14 @@
+/* Переменные */
+:root {
+    --w-wrapper: 1650px;
+    --p-lr-wrapper: 100px;
+    --p-tb-section: 135px;
+    --m-t-content: 167px;
+    --heading-size: 60px;
+    --description-size: 20px;
+    --text-color: #ffffff;
+}
+
 /* Глобальные стили */
 .body {
     background: linear-gradient(180deg, #026fd4 0%, #2c2c47 54.17%);
@@ -6,32 +17,34 @@
 }
 
 .wrapper {
-    max-width: calc(1650px + 100px * 2);
+    max-width: calc(var(--w-wrapper) + var(--p-lr-wrapper) * 2);
     margin-left: auto;
     margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.wrapper_card {
-    padding-top: 135px;
-    padding-bottom: 135px;
+    padding-left: var(--p-lr-wrapper);
+    padding-right: var(--p-lr-wrapper);
 }
 
 .heading {
     font-weight: 700;
-    font-size: 60px;
     line-height: 73px;
+    font-size: var(--heading-size);
+    color: var(--text-color);
     text-transform: uppercase;
-    color: #ffffff;
 }
 
 .description {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 148.52%;
-    color: #ffffff;
+    line-height: 35px;
+    font-size: var(--description-size);
+    color: var(--text-color);
 }
+
+/* delete */
+.wrapper_card {
+    padding-top: var(--p-tb-section);
+    padding-bottom: var(--p-tb-section);
+}
+/* /delete */
 
 @media (max-width: 1280px) {
     .wrapper {
