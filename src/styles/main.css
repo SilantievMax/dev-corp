@@ -68,12 +68,12 @@ ul {
 }
 
 /* Global styles */
-@import "components/global.css";
+@import "components/commonСomponents/global.css";
 /*  подключение модулей CSS */
-@import "components/header.css";
+@import "components/commonСomponents/header.css";
 /* pageHome styles */
 @import "components/pageHome/heading.css";
 @import "components/pageHome/opportunities.css";
 @import "components/pageHome/projectsCompany.css";
 @import "components/pageHome/project-founders-network.css";
-@import "components/footer.css";
+@import "components/commonСomponents/footer.css";
