@@ -93,3 +93,11 @@
 .about-block__link:hover {
     background-size: 110%;
 }
+
+.about-block__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
