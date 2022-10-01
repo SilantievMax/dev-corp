@@ -8,6 +8,7 @@
     --description-size: 20px;
     --text-color: #ffffff;
     --line-image: url("../images/opportunities-line.png");
+    --line-center: url('../images/line-center.png')
 }
 
 /* Глобальные стили */

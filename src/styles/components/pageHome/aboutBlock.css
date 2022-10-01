@@ -13,6 +13,22 @@
     height: 20px;
 }
 
+.about-block__heading_center::after {
+    content: '';
+    display: block;
+    position: relative;
+    background-image: var(--line-center);
+    background-repeat: no-repeat;
+    width: 1174px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-block__heading_center {
+    text-align: center;
+}
+
 .about-block__heading_project::after {
     left: -528px;
 }
@@ -25,6 +41,14 @@
     left: -247px;
 }
 
+.about-block__heading_about-community::after {
+    left: -394px;
+}
+
+.about-block__heading_our-plans::after {
+    left: -432px;
+}
+
 .about-block__block-reverse {
     flex-direction: row-reverse;
 }
@@ -33,12 +57,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 158px;
+    margin-top: var(--m-t-content);
     gap: 25px;
 }
 
 .about-block__images {
-    max-width: 740px;
+    max-width: 950px;
 }
 
 

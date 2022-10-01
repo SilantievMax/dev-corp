@@ -1,0 +1,41 @@
+.purposes-mission {
+    padding-top: var(--p-tb-section);
+    padding-bottom: var(--p-tb-section);
+}
+
+.purposes-mission__list {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--m-t-content);
+    gap: 130px;
+}
+
+.purposes-mission__item {
+    padding: 50px 25px;
+    max-width: 484px;
+    background: linear-gradient(145.6deg, rgba(130, 130, 207, 0.7) -19.97%, rgba(130, 130, 207, 0.14) 120.8%);
+    box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.purposes-mission__images {
+    width: 230px;
+}
+
+.purposes-mission__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--text-color);
+    margin-top: 50px;
+}
+
+.purposes-mission__description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-color);
+    margin-top: 25px;
+}
