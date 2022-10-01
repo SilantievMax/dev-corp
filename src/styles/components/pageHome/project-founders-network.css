@@ -1,58 +1,53 @@
-.project-founders-network__block {
+.about-block {
+    padding-top: var(--p-tb-section);
+    padding-bottom: var(--p-tb-section);
+}
+
+.about-block__heading::after {
+    content: '';
+    display: block;
+    position: relative;
+    background-image: var(--line-image);
+    background-repeat: no-repeat;
+    width: 881px;
+    height: 20px;
+}
+
+.about-block__heading_project::after {
+    left: -528px;
+}
+
+.about-block__heading_founders::after {
+    left: -443px;
+}
+
+.about-block__heading_network::after {
+    left: -247px;
+}
+
+.about-block__block-reverse {
+    flex-direction: row-reverse;
+}
+
+.about-block__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 158px;
     gap: 25px;
 }
-.project-founders-network__block_reverse {
-    flex-direction: row-reverse;
-}
-
-.project-founders-network__heading_project::after {
-    content: '';
-    display: block;
-    position: relative;
-    background-image: url('../images/opportunities-line.png');
-    background-repeat: no-repeat;
-    width: 881px;
-    height: 20px;
-    left: -528px;
-}
-
-.project-founders-network__heading_founders::after {
-    content: '';
-    display: block;
-    position: relative;
-    background-image: url('../images/opportunities-line.png');
-    background-repeat: no-repeat;
-    width: 881px;
-    height: 20px;
-    left: -443px;
-}
-
-.project-founders-network__heading_network::after {
-    content: '';
-    display: block;
-    position: relative;
-    background-image: url('../images/opportunities-line.png');
-    background-repeat: no-repeat;
-    width: 881px;
-    height: 20px;
-    left: -247px;
-}
 
 
-.project-founders-network__images {
+.about-block__images {
     max-width: 740px;
 }
 
 
-.project-founders-network__br {
+.about-block__right {
     min-width: 200px;
 }
 
-.project-founders-network__link {
+.about-block__link {
     display: inline-block;
     font-weight: 300;
     font-size: 20px;
@@ -68,22 +63,6 @@
     transition: background-size 1s ease-in-out;
 }
 
-.project-founders-network__link:hover {
+.about-block__link:hover {
     background-size: 110%;
-}
-
-
-@media (max-width: 1280px) {
-    .project-founders-network__images {
-        max-width: 540px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .project-founders-network__block {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
 }
