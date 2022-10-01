@@ -70,6 +70,10 @@
     min-width: 200px;
 }
 
+.about-block__description {
+    max-width: 822px;
+}
+
 .about-block__link {
     display: inline-block;
     font-weight: 300;
