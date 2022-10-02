@@ -1,0 +1,23 @@
+.swiper-founders {
+    padding-top: var(--p-tb-section);
+    padding-bottom: var(--p-tb-section);
+    position: relative;
+    width: 600px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
