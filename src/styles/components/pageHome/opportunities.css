@@ -17,8 +17,8 @@
 .opportunities__list {
     margin-top: var(--m-t-content); 
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 104px;
 }
 
 .opportunities__item {
