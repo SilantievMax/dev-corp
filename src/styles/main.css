@@ -73,7 +73,6 @@ ul {
 
 /* Global styles */
 @import "components/commonСomponents/global.css";
-@import "components/commonСomponents/backgrounds.css";
 /*  подключение модулей CSS */
 @import "components/commonСomponents/header.css";
 /* pageHome styles */

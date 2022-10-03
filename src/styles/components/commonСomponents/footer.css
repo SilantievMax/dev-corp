@@ -47,6 +47,10 @@
     background-repeat: no-repeat;
 }
 
+.footer__right {
+    min-width: 500px;
+}
+
 .footer__item:not(:last-child) {
     margin-bottom: 24px;
 }
@@ -74,4 +78,47 @@
 
 .footer__link:hover:after, .footer__link:focus:after {
     width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .footer__right {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding-top: 33px;
+        padding-bottom: 33px;
+        background-image: none, linear-gradient(180deg, #0160A1 0%, #011848 71.66%, #00133E 100%);
+    }
+
+    .footer__right {
+        min-width: 200px;
+    }
+
+    .footer__center {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__description {
+        margin-top: 10px;
+    }
+
+    .footer__heading {
+        margin-top: 20px;
+        line-height: 25px;
+    }
+
+    .footer__center, .footer__right {
+        display: none;
+    }
+
+    .footer {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
 }

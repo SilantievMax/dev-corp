@@ -46,64 +46,28 @@
     color: var(--text-color);
 }
 
-/* delete */
-.wrapper_card {
-    padding-top: var(--p-tb-section);
-    padding-bottom: var(--p-tb-section);
-}
-/* /delete */
-
 @media (max-width: 1280px) {
-    .wrapper {
-        max-width: calc(1650px + 60px * 2);
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .wrapper_card {
-        padding-top: 105px;
-        padding-bottom: 105px;
-    }
-
-    .heading {
-        font-size: 52px;
-    }
-
-    .description {
-        font-size: 18px;
+    :root {
+        --p-lr-wrapper: 60px;
+        --heading-size: 52px;
+        --description-size: 18px;
     }
 }
 
 @media (max-width: 1024px) {
-    .wrapper {
-        max-width: calc(1650px + 20px * 2);
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .wrapper_card {
-        padding-top: 85px;
-        padding-bottom: 85px;
-    }
-
-    .description {
-        font-size: 16px;
+    :root {
+        --p-lr-wrapper: 20px;
+        --heading-size: 48px;
+        --description-size: 16px;
+        --p-tb-section: 85px;
     }
 }
 
 @media (max-width: 768px) {
-    .wrapper {
-        max-width: calc(1650px + 10px * 2);
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .wrapper_card {
-        padding-top: 55px;
-        padding-bottom: 55px;
-    }
-
-    .heading {
-        font-size: 40px;
+    :root {
+        --p-lr-wrapper: 10px;
+        --heading-size: 40px;
+        --description-size: 13px;
+        --p-tb-section: 55px;
     }
 }
