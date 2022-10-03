@@ -51,6 +51,8 @@
         --p-lr-wrapper: 60px;
         --heading-size: 52px;
         --description-size: 18px;
+        --m-t-content: 107px;
+        --p-tb-section: 95px;
     }
 }
 
@@ -59,7 +61,8 @@
         --p-lr-wrapper: 20px;
         --heading-size: 48px;
         --description-size: 16px;
-        --p-tb-section: 85px;
+        --m-t-content: 87px;
+        --p-tb-section: 65px;
     }
 }
 
@@ -68,6 +71,13 @@
         --p-lr-wrapper: 10px;
         --heading-size: 40px;
         --description-size: 13px;
-        --p-tb-section: 55px;
+        --p-tb-section: 35px;
+        --m-t-content: 57px;
+    }
+}
+
+@media(max-width: 568px) {
+    :root {
+        --heading-size: 30px;
     }
 }

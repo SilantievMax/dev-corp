@@ -60,6 +60,14 @@
     margin-top: 10px;
 }
 
+@media(max-width: 1560px) {
+    .opportunities__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
 @media (max-width: 1280px) {
     .opportunities__heading::after {
         left: -428px;
@@ -69,6 +77,7 @@
 @media (max-width: 1024px) {
     .opportunities__heading::after {
         bottom: 10px;
+        left: -464px;
     }
 
     .opportunities__list {
@@ -108,5 +117,31 @@
 
     .opportunities__heading::after {
         left: -531px;
+    }
+}
+
+@media(max-width: 568px) {
+    .opportunities__images {
+        width: 133px;
+    }
+
+    .opportunities__heading-item {
+        font-size: 26px;
+    }
+
+    .opportunities__descriptions {
+        font-size: 16px;
+    }
+
+    .opportunities__heading::after {
+        bottom: 20px;
+        left: -618px;
+    }
+
+    .opportunities__item {
+        padding-top: 22px;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-bottom: 9px;
     }
 }
