@@ -216,7 +216,7 @@
 @media (max-width: 1024px) {
     .projects-company__heading::after {
         bottom: 10px;
-        left: -284px;
+        left: -382px;
     }
 
     .projects-company__images {
