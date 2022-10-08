@@ -58,6 +58,14 @@
     background-size: 110%;
 }
 
+.about-block__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+} 
+
 
 @media (max-width: 1280px) {
     .about-block__link {
@@ -118,13 +126,7 @@
 
 /* 
 
-.about-block__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: var(--text-color);
-    margin-bottom: 25px;
-} */
+*/
 /* 
 @media(max-width: 1500px) {
     .about-block__block .about-block__description, .about-block__link {
