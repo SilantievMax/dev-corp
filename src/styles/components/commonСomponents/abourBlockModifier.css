@@ -32,10 +32,17 @@
     position: relative;
     background-image: var(--line-center);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 1174px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.about-block__description_text {
+    max-height: 900px !important;
+    overflow: visible !important;
 }
 
 @media (max-width: 1280px) {
@@ -49,6 +56,18 @@
     
     .about-block__heading_network::after {
         left: -329px;
+    }
+
+    .about-block__heading_center::after {
+        width: 800px;
+    }
+
+    .about-block__heading_about-community::after {
+        left: -455px;
+    }
+    
+    .about-block__heading_our-plans::after {
+        left: -487px;
     }
 }
 
@@ -67,6 +86,21 @@
         bottom: 10px;
         left: -370px;
     }
+
+    .about-block__heading_center::after {
+        bottom: 10px;
+        width: 600px;
+    }   
+
+    .about-block__heading_about-community::after {
+        bottom: 10px;
+        left: -490px;
+    }
+    
+    .about-block__heading_our-plans::after {
+        bottom: 10px;
+        left: -518px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -80,6 +114,18 @@
     
     .about-block__heading_network::after {
         left: -456px;
+    }
+
+    .about-block__heading_center::after {
+        width: 450px;
+    }
+
+    .about-block__heading_about-community::after {
+        left: -553px;
+    }
+    
+    .about-block__heading_our-plans::after {
+        left: -576px;
     }
 }
 
@@ -98,6 +144,21 @@
         bottom: 20px;
         left: -556px;
     }
+
+    .about-block__heading_center::after {
+        bottom: 20px;
+        width: 300px;
+    }
+
+    .about-block__heading_about-community::after {
+        bottom: 20px;
+        left: -630px;
+    }
+    
+    .about-block__heading_our-plans::after {
+        bottom: 20px;
+        left: -648px;
+    }
 }
 
 @media(max-width: 375px) {
@@ -114,5 +175,17 @@
     .about-block__heading_network::after {
         bottom: 31px;
         left: -631px;
+    }
+
+    .about-block__heading_center::after {
+        width: 200px;
+    }
+
+    .about-block__heading_about-community::after {
+        left: -686px;
+    }
+    
+    .about-block__heading_our-plans::after {
+        left: -701px;
     }
 }

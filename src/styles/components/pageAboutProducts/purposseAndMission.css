@@ -18,10 +18,11 @@
     backdrop-filter: blur(15px);
     border-radius: 20px;
     text-align: center;
+    flex: 1;
 }
 
 .purposes-mission__images {
-    width: 230px;
+    max-width: 230px;
 }
 
 .purposes-mission__heading {
@@ -34,8 +35,25 @@
 
 .purposes-mission__description {
     font-weight: 300;
-    font-size: 20px;
-    line-height: 28px;
     color: var(--text-color);
     margin-top: 25px;
+}
+
+@media (max-width: 1280px) {
+    .purposes-mission__list {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .purposes-mission__heading {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .purposes-mission__list {
+        flex-direction: column;
+        align-items:center;
+    }
 }
