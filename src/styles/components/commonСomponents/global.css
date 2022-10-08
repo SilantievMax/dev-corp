@@ -2,10 +2,11 @@
 :root {
     --w-wrapper: 1650px;
     --p-lr-wrapper: 100px;
-    --p-tb-section: 100px;
+    --p-tb-section: 70px;
     --m-t-content: 70px;
     --heading-size: 60px;
     --description-size: 20px;
+    --description-line-height: 35px;
     --text-color: #ffffff;
     --line-left: url("../images/opportunities-line.png");
     --line-center: url("../images/line-center.png");
@@ -41,7 +42,7 @@
 
 .description {
     font-weight: 400;
-    line-height: 35px;
+    line-height: var(--description-line-height);
     font-size: var(--description-size);
     color: var(--text-color);
 }
@@ -51,7 +52,8 @@
         --p-lr-wrapper: 60px;
         --heading-size: 52px;
         --description-size: 18px;
-        --p-tb-section: 75px;
+        --description-line-height: 28px;
+        --p-tb-section: 45px;
         --m-t-content: 67px;
     }
 }
@@ -61,7 +63,8 @@
         --p-lr-wrapper: 20px;
         --heading-size: 48px;
         --description-size: 16px;
-        --p-tb-section: 45px;
+        --description-line-height: 30px;
+        --p-tb-section: 38px;
         --m-t-content: 30px;
     }
 }
@@ -71,6 +74,7 @@
         --p-lr-wrapper: 10px;
         --heading-size: 40px;
         --description-size: 13px;
+        --description-line-height: 25px;
         --p-tb-section: 32px;
         --m-t-content: 27px;
     }
@@ -80,18 +84,20 @@
     :root {
         --heading-size: 30px;
         --p-tb-section: 22px;
-        --m-t-content: 10px;
+        --m-t-content: 13px;
+        --description-line-height: 22px;
+    }
+}
+
+
+@media(max-width: 375px) {
+    :root {
+        --heading-size: 23px;
     }
 }
 
 @media(max-width: 320px) {
     .wrapper {
         overflow-x: hidden;
-    }
-}
-
-@media(max-width: 375px) {
-    :root {
-        --heading-size: 23px;
     }
 }

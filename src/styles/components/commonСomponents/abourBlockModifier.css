@@ -1,0 +1,118 @@
+.about-block__heading_project::after {
+    left: -528px;
+}
+
+.about-block__heading_founders::after {
+    left: -443px;
+}
+
+.about-block__heading_network::after {
+    left: -247px;
+}
+
+.about-block__heading_about-community::after {
+    left: -394px;
+}
+
+.about-block__heading_our-plans::after {
+    left: -432px;
+}
+
+.about-block__block-reverse {
+    flex-direction: row-reverse;
+}
+
+.about-block__heading_center {
+    text-align: center;
+}
+
+.about-block__heading_center::after {
+    content: '';
+    display: block;
+    position: relative;
+    background-image: var(--line-center);
+    background-repeat: no-repeat;
+    width: 1174px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1280px) {
+    .about-block__heading_project::after {
+        left: -574px;
+    }
+    
+    .about-block__heading_founders::after {
+        left: -499px;
+    }
+    
+    .about-block__heading_network::after {
+        left: -329px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-block__heading_project::after {
+        bottom: 10px;
+        left: -595px;
+    }
+    
+    .about-block__heading_founders::after {
+        bottom: 10px;
+        left: -530px;
+    }
+    
+    .about-block__heading_network::after {
+        bottom: 10px;
+        left: -370px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-block__heading_project::after {
+        left: -643px;
+    }
+    
+    .about-block__heading_founders::after {
+        left: -585px;
+    }
+    
+    .about-block__heading_network::after {
+        left: -456px;
+    }
+}
+
+@media(max-width: 568px) {
+    .about-block__heading_project::after {
+        bottom: 20px;
+        left: -699px;
+    }
+    
+    .about-block__heading_founders::after {
+        bottom: 20px;
+        left: -655px;
+    }
+    
+    .about-block__heading_network::after {
+        bottom: 20px;
+        left: -556px;
+    }
+}
+
+@media(max-width: 375px) {
+    .about-block__heading_project::after {
+        bottom: 31px;
+        left: -741px;
+    }
+    
+    .about-block__heading_founders::after {
+        bottom: 31px;
+        left: -707px;
+    }
+    
+    .about-block__heading_network::after {
+        bottom: 31px;
+        left: -631px;
+    }
+}
