@@ -2,12 +2,12 @@
 :root {
     --w-wrapper: 1650px;
     --p-lr-wrapper: 100px;
-    --p-tb-section: 135px;
-    --m-t-content: 167px;
+    --p-tb-section: 100px;
+    --m-t-content: 70px;
     --heading-size: 60px;
     --description-size: 20px;
     --text-color: #ffffff;
-    --line-image: url("../images/opportunities-line.png");
+    --line-left: url("../images/opportunities-line.png");
     --line-center: url("../images/line-center.png");
 }
 
@@ -51,8 +51,8 @@
         --p-lr-wrapper: 60px;
         --heading-size: 52px;
         --description-size: 18px;
-        --m-t-content: 107px;
-        --p-tb-section: 95px;
+        --p-tb-section: 75px;
+        --m-t-content: 67px;
     }
 }
 
@@ -61,8 +61,8 @@
         --p-lr-wrapper: 20px;
         --heading-size: 48px;
         --description-size: 16px;
-        --m-t-content: 17px;
-        --p-tb-section: 65px;
+        --p-tb-section: 45px;
+        --m-t-content: 30px;
     }
 }
 
@@ -71,13 +71,27 @@
         --p-lr-wrapper: 10px;
         --heading-size: 40px;
         --description-size: 13px;
-        --p-tb-section: 35px;
-        --m-t-content: 57px;
+        --p-tb-section: 32px;
+        --m-t-content: 27px;
     }
 }
 
 @media(max-width: 568px) {
     :root {
         --heading-size: 30px;
+        --p-tb-section: 22px;
+        --m-t-content: 10px;
+    }
+}
+
+@media(max-width: 320px) {
+    .wrapper {
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width: 375px) {
+    :root {
+        --heading-size: 23px;
     }
 }

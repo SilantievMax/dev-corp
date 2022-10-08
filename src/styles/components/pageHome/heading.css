@@ -24,3 +24,17 @@
     color: #fff;
     margin-top: 14px;
 }
+
+@media (max-width: 768px) {
+    .home__heading {
+        font-size: 56px;
+        line-height: 61px;
+    }
+}
+
+@media(max-width: 568px) {
+    .home__heading {
+        font-size: 36px;
+        line-height: 61px;
+    }
+}

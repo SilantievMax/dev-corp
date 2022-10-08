@@ -21,8 +21,8 @@
 
 .header__list {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header__item {
@@ -109,6 +109,10 @@
         padding-top: 12px;
         padding-bottom: 12px;
         position: relative;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1000;
     }
 
     .header__nav {

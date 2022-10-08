@@ -60,8 +60,12 @@
     margin-top: var(--m-t-content);
 }
 
-.about-block__images {
-}
+    .about-block__images {
+        max-width: 950px;
+        height: 554px;
+        width: 100%;
+        height: 100%;
+    }
 
 
 .about-block__right {
@@ -116,11 +120,19 @@
     }
 
     .about-block__images {
-        max-width: 100%;
-        min-width: 650px;
+        max-width: 950px;
+        height: 554px;
+        width: 100%;
+        height: 100%;
     }
 }
 
 @media (max-width: 1024px) {
-    
+    .about-block__block {
+        flex-direction: column;
+    }
+
+    .about-block__right {
+        min-width: 100px;
+    }
 }

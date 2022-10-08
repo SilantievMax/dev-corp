@@ -1,3 +1,15 @@
+:root {
+    --container-w: 1168px;
+    --circle-w-h: 151px;
+    --circle-t-2-3: 12px;
+    --circle-t-4-5: 242px;
+    --circle-b-6-7: 17px;
+    --circle-l-r-4-5: 13px;
+    --circle-l-r-2-3-6-7: 190px;
+    --tooltip-l-r: 76px;
+    --tooltip-t: 108px;
+}
+
 .projects-company {
     padding-top: var(--p-tb-section);
     padding-bottom: var(--p-tb-section);
@@ -7,7 +19,7 @@
     content: '';
     display: block;
     position: relative;
-    background-image: var(--line-image);
+    background-image: var(--line-left);
     background-repeat: no-repeat;
     width: 881px;
     height: 20px;
@@ -16,32 +28,14 @@
 
 .projects-company__container {
     position: relative;
-    width: 1168px;
-    height: 622px;
+    width: var(--container-w);
     margin-left: auto;
     margin-right: auto;
     margin-top: var(--m-t-content);
 }
 
 .projects-company__images {
-    width: 1168px;
-    height: 622px;
-}
-
-.projects-company__circle_active, .projects-company__circle_inactive {
-    cursor: pointer;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 151px;
-    height: 151px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 27px;
+    width: 100%;
 }
 
 .projects-company__circle_active {
@@ -59,14 +53,63 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+.projects-company__circle_active, .projects-company__circle_inactive {
+    cursor: pointer;
+    position: absolute;
+    width: var(--circle-w-h);
+    height: var(--circle-w-h);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 27px;
+}
+
+.projects-company__circle:nth-child(2) {
+    top: var(--circle-t-2-3);
+    left: var(--circle-l-r-2-3-6-7);
+    z-index: 210;
+}
+
+.projects-company__circle:nth-child(3) {
+    top: var(--circle-t-2-3);
+    right: var(--circle-l-r-2-3-6-7);
+    z-index: 200;
+}
+.projects-company__circle:nth-child(4) {
+    top: var(--circle-t-4-5);
+    left: var(--circle-l-r-4-5);
+    z-index: 220;
+}
+.projects-company__circle:nth-child(5) {
+    top: var(--circle-t-4-5);
+    right: var(--circle-l-r-4-5);
+    z-index: 200;
+}
+.projects-company__circle:nth-child(6) {
+    bottom: var(--circle-b-6-7);
+    left: var(--circle-l-r-2-3-6-7);
+    z-index: 200;
+}
+
+.projects-company__circle:nth-child(7) {
+    bottom: var(--circle-b-6-7);
+    right: var(--circle-l-r-2-3-6-7);
+    z-index: 200;
+}
+
+/* tooltip */ 
+
 .projects-company__tooltip {
     position: absolute;
-    top: 108px;
+    top: var(--tooltip-t);
     width: 377px;
     background: linear-gradient(130.88deg, rgba(2, 111, 212, 0.7) 0%, rgba(2, 111, 212, 0.14) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     padding: 24px 28px;
     visibility: hidden;
     opacity: 0;
@@ -79,19 +122,19 @@
 }
 
 .projects-company__circle:nth-child(2n) .projects-company__tooltip {
-    left: 76px;
+    left: var(--tooltip-l-r);
     border-top-left-radius: 0;
 
 }
 
 .projects-company__circle:nth-child(2n+1) .projects-company__tooltip {
-    right: 76px;
+    right: var(--tooltip-l-r);
     border-top-right-radius: 0;
 }
 
 .projects-company__tooltip-heading {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 39px;
     color: #FFFFFF;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -105,182 +148,124 @@
     margin-top: 15px;
 }
 
-.projects-company__circle:nth-child(2) {
-    top: 11px;
-    left: 197px;
-    z-index: 210;
-}
+@media(max-width: 1380px) {
+    :root {
+        --container-w: 968px;
+        --circle-w-h: 125px;
+        --circle-t-2-3: 11px;
+        --circle-t-4-5: 201px;
+        --circle-b-6-7: 15px;
+        --circle-l-r-4-5: 11px;
+        --circle-l-r-2-3-6-7: 158px;
+        --tooltip-l-r: 61px;
+        --tooltip-t: 88px
+    }
 
-.projects-company__circle:nth-child(3) {
-    top: 11px;
-    left: 820px;
-    z-index: 200;
-}
-.projects-company__circle:nth-child(4) {
-    top: 235px;
-    left: 23px;
-    z-index: 220;
-}
-.projects-company__circle:nth-child(5) {
-    top: 235px;
-    left: 994px;
-    z-index: 200;
-}
-.projects-company__circle:nth-child(6) {
-    top: 460px;
-    left: 197px;
-    z-index: 200;
-}
-
-.projects-company__circle:nth-child(7) {
-    top: 460px;
-    left: 820px;
-    z-index: 200;
+    .projects-company__circle_active, .projects-company__circle_inactive, .projects-company__tooltip-heading {
+        font-size: 23px;
+    }
+    
+    .projects-company__tooltip-description {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1280px) {
     .projects-company__heading::after {
         left: -235px;
     }
+}
 
-    .projects-company__images {
-        width: 868px;
-        max-height: 622px;
-    }
-
-    .projects-company__container {
-        width: 868px;
-        height: 622px;
-    }
-
-    .projects-company__circle_active, .projects-company__circle_inactive {
-        width: 111px;
-        height: 111px;
-        font-size: 19px;
-
+@media(max-width: 1095px) {
+    :root {
+        --container-w: 668px;
+        --circle-w-h: 86px;
+        --circle-t-2-3: 7px;
+        --circle-t-4-5: 139px;
+        --circle-b-6-7: 12px;
+        --circle-l-r-4-5: 7px;
+        --circle-l-r-2-3-6-7: 109px;
+        --tooltip-l-r: 40px;
+        --tooltip-t: 62px
     }
 
-    .projects-company__circle:nth-child(2) {
-        top: 84px;
-        left: 142px;
-    }
-    
-    .projects-company__circle:nth-child(3) {
-        top: 84px;
-        left: 615px;
-    }
-    .projects-company__circle:nth-child(4) {
-        top: 256px;
-        left: 11px;
-    }
-    .projects-company__circle:nth-child(5) {
-        top: 256px;
-        left: 747px;
-    }
-    .projects-company__circle:nth-child(6) {
-        top: 426px;
-        left: 142px;
-    }
-    
-    .projects-company__circle:nth-child(7) {
-        top: 426px;
-        left: 615px;
-    }
-
-    .projects-company__tooltip {
-        top: 77px;
-        width: 377px;
-        padding: 20px 20px;
-    }
-    
-    .projects-company__circle:nth-child(2n) .projects-company__tooltip {
-        left: 51px;
-    }
-    
-    .projects-company__circle:nth-child(2n+1) .projects-company__tooltip {
-        right: 51px;
-    }
-    
-    .projects-company__tooltip-heading {
-        font-size: 22px;
+    .projects-company__circle_active, .projects-company__circle_inactive, .projects-company__tooltip-heading {
+        font-size: 18px;
     }
     
     .projects-company__tooltip-description {
-        font-size: 16px;
-        margin-top: 10px;
-        line-height: 24px;
-
+        font-size: 14px;
+        line-height: 27px;
     }
 }
 
 @media (max-width: 1024px) {
     .projects-company__heading::after {
         bottom: 10px;
-        left: -382px;
+        left: -287px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --container-w: 468px;
+        --circle-w-h: 60.5px;
+        --circle-t-2-3: 5px;
+        --circle-t-4-5: 97px;
+        --circle-b-6-7: 9px;
+        --circle-l-r-4-5: 5px;
+        --circle-l-r-2-3-6-7: 76px;
+        --tooltip-l-r: 27px;
+        --tooltip-t: 42px
     }
 
-    .projects-company__images {
-        width: 668px;
-    }
-
-    .projects-company__container {
-        width: 668px;
-    }
-
-    .projects-company__circle_active, .projects-company__circle_inactive {
-        width: 86px;
-        height: 86px;
-        font-size: 16px;
-
-    }
-
-    .projects-company__circle:nth-child(2) {
-        top: 136px;
-        left: 109px;
-    }
-    
-    .projects-company__circle:nth-child(3) {
-        top: 136px;
-        left: 474px;
-    }
-    .projects-company__circle:nth-child(4) {
-        top: 268px;
-        left: 8px;
-    }
-    .projects-company__circle:nth-child(5) {
-        top: 268px;
-        left: 575px;
-    }
-    .projects-company__circle:nth-child(6) {
-        top: 399px;
-        left: 109px;
-    }
-    
-    .projects-company__circle:nth-child(7) {
-        top: 399px;
-        left: 473px;
+    .projects-company__circle_active, .projects-company__circle_inactive, .projects-company__tooltip-heading {
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .projects-company__tooltip {
-        top: 60px;
-        padding: 20px 20px;
-    }
-    
-    .projects-company__circle:nth-child(2n) .projects-company__tooltip {
-        left: 39px;
-    }
-    
-    .projects-company__circle:nth-child(2n+1) .projects-company__tooltip {
-        right: 39px;
-    }
-    
-    .projects-company__tooltip-heading {
-        font-size: 18px;
+        width: 150px;
+        padding: 5px;
+        border-radius: 10px;
     }
     
     .projects-company__tooltip-description {
-        font-size: 11px;
-        margin-top: 7px;
+        font-size: 8px;
         line-height: 20px;
+        margin-top: 7px;
+    }
+
+    .projects-company__heading::after {
+        bottom: 20px;
+        left: -383px;
+    }
+}
+
+@media(max-width: 568px) {
+    .projects-company__heading::after {
+        bottom: 20px;
+        left: -507px;
+    }
+}
+
+@media(max-width: 491px) {
+    :root {
+        --container-w: 268px;
+        --circle-w-h: 60.5px;
+        --circle-t-2-3: -11px;
+        --circle-t-4-5: 42px;
+        --circle-b-6-7: -6px;
+        --circle-l-r-4-5: -13px;
+        --circle-l-r-2-3-6-7: 31px;
+        --tooltip-l-r: 27px;
+        --tooltip-t: 42px
+    }
+}
+
+@media(max-width: 375px) {
+    .projects-company__heading::after {
+        bottom: 31px;
+        left: -591px;
     }
 }
