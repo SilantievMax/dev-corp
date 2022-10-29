@@ -51,6 +51,12 @@ body {
     font-weight: 400;
 }
 
+@media (max-width: 768px) {
+    main {
+        padding-top: 68px;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -76,7 +82,7 @@ ul {
 /*  подключение модулей CSS */
 @import "components/commonСomponents/header.css";
 /* pageHome styles */
-@import "components/pageHome/heading.css";
+@import "components/pageHome/home.css";
 @import "components/pageHome/opportunities.css";
 @import "components/pageHome/projectsCompany.css";
 @import "components/commonСomponents/aboutBlock.css";

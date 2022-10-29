@@ -2,7 +2,6 @@
     padding-top: var(--p-tb-section);
     padding-bottom: var(--p-tb-section);
     overflow-x: hidden;
-    cursor: no-drop;
 }
 
 .swiper-founders__items {

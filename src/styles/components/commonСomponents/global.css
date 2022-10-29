@@ -2,8 +2,8 @@
 :root {
     --w-wrapper: 1440px;
     --p-lr-wrapper: 100px;
-    --p-tb-section: 70px;
-    --m-t-content: 70px;
+    --p-tb-section: 100px;
+    --m-t-content: 100px;
     --heading-size: 60px;
     --description-size: 20px;
     --description-line-height: 35px;
@@ -18,8 +18,8 @@
         url(../images/bg01.png) no-repeat top right/1467px,
         url(../images/bg02.png) no-repeat top 877px left/871px,
         url(../images/bg03.png) no-repeat top 2444px right/915px,
-        url(../images/bg04.png) no-repeat top 3974px left/913px,
-        url(../images/bg05.png) no-repeat top 5268px right/754px,
+        url(../images/bg04.png) no-repeat top 3874px left/913px,
+        url(../images/bg05.png) no-repeat top 5168px right/754px,
         linear-gradient(180deg, #026fd4 0%, #2c2c47 54.17%);
     min-height: 100vh;
 }
