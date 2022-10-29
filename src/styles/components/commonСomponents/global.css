@@ -1,6 +1,6 @@
 /* Переменные */
 :root {
-    --w-wrapper: 1650px;
+    --w-wrapper: 1440px;
     --p-lr-wrapper: 100px;
     --p-tb-section: 70px;
     --m-t-content: 70px;
@@ -15,11 +15,11 @@
 /* Глобальные стили */
 .body {
     background: 
-        url(../images/bg01.png) no-repeat top right,
-        url(../images/bg02.png) no-repeat top 877px left,
-        url(../images/bg03.png) no-repeat top 2444px right,
-        url(../images/bg04.png) no-repeat top 3974px left,
-        url(../images/bg05.png) no-repeat top 5268px right,
+        url(../images/bg01.png) no-repeat top right/1467px,
+        url(../images/bg02.png) no-repeat top 877px left/871px,
+        url(../images/bg03.png) no-repeat top 2444px right/915px,
+        url(../images/bg04.png) no-repeat top 3974px left/913px,
+        url(../images/bg05.png) no-repeat top 5268px right/754px,
         linear-gradient(180deg, #026fd4 0%, #2c2c47 54.17%);
     min-height: 100vh;
 }
@@ -56,6 +56,16 @@
         --p-tb-section: 45px;
         --m-t-content: 67px;
     }
+    .body {
+        background: 
+            url(../images/bg01.png) no-repeat top right/1067px,
+            url(../images/bg02.png) no-repeat top 877px left/571px,
+            url(../images/bg03.png) no-repeat top 2444px right/515px,
+            url(../images/bg04.png) no-repeat top 3974px left/513px,
+            url(../images/bg05.png) no-repeat top 5268px right/454px,
+            linear-gradient(180deg, #026fd4 0%, #2c2c47 54.17%);
+        min-height: 100vh;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -77,6 +87,16 @@
         --description-line-height: 25px;
         --p-tb-section: 32px;
         --m-t-content: 27px;
+    }
+    .body {
+        background: 
+            url(../images/bg01.png) no-repeat top right/567px,
+            url(../images/bg02.png) no-repeat top 877px left/271px,
+            url(../images/bg03.png) no-repeat top 2444px right/215px,
+            url(../images/bg04.png) no-repeat top 3974px left/213px,
+            url(../images/bg05.png) no-repeat top 5268px right/154px,
+            linear-gradient(180deg, #026fd4 0%, #2c2c47 54.17%);
+        min-height: 100vh;
     }
 }
 
