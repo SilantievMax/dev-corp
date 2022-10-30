@@ -77,6 +77,8 @@ ul {
     list-style: none;
 }
 
+@import "components/commonСomponents/animate.css";
+
 /* Global styles */
 @import "components/commonСomponents/global.css";
 /*  подключение модулей CSS */
