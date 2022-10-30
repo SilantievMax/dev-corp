@@ -7,7 +7,7 @@
 .swiper-founders__items {
     display: block;
     position: relative;
-    height: 750px;
+    height: 610px;
     margin-top: var(--m-t-content);
 }
 
@@ -16,7 +16,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 492px;
+    width: 390px;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     z-index: -1;
@@ -25,6 +25,58 @@
     align-items: center;
     flex-direction: column;
     font-size: 20px;
+}
+
+.swiper-founders__info {
+    position: relative;
+}
+
+.swiper-founders__info >svg {
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+}
+
+.swiper-founders__info-block {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    padding: 50px;
+    color: #fff;
+    transition: visibility 3s ease-in-out;
+}
+
+.swiper-founders__info > svg:hover + .swiper-founders__info-block {
+    visibility: visible;
+    display: inline-block;
+}
+
+.swiper-founders__info-heading {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.swiper-founders__info-small {
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.swiper-founders__info-description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 46px;
 }
 
 .swiper-founders__images {
@@ -36,10 +88,10 @@
 
 .swiper-founders__mane {
     font-weight: 700;
-    line-height: 44px;
+    line-height: 33px;
     color: var(--text-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 33px;
+    margin-top: 25px;
 }
 
 .swiper-description {
@@ -48,7 +100,7 @@
     line-height: 24px;
     color: var(--text-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .swiper-founders__hiadeng {
@@ -85,7 +137,7 @@
 .swiper-founders__item.active {
     opacity: 1;
     z-index: 99;
-    width: 600px;
+    width: 487px;
     font-size: 36px;
 }
 
@@ -125,7 +177,7 @@
 .swiper-founders__button:nth-child(1):before {
     content: "";
     position: absolute;
-    left: -699px;
+    left: -600px;
     top: -83px;
     background-repeat: no-repeat;
     background-image: url(../images/prev.svg);
@@ -137,11 +189,218 @@
 .swiper-founders__button:nth-child(2):before {    
     content: "";
     position: absolute;
-    left: 659px;
+    left: 560px;
     top: -83px;
     background-repeat: no-repeat;
     background-image: url(../images/next.svg);
     width: 50px;
     height: 50px;
     z-index: -99;
+}
+
+@media (max-width: 1280px) {
+    .swiper-founders__items {
+        height: 600px;
+    }
+
+    .swiper-founders__item {
+        width: 322px;
+    }
+
+    .swiper-founders__item.active {
+        width: 402px;
+    }
+
+    .swiper-founders__mane {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .swiper-description {
+        font-size: 16px;
+        margin-top: 2px;
+    }
+    
+    .swiper-founders__info-block {
+        padding: 25px;
+    }
+
+    .swiper-founders__info >svg {
+        top: 15px;
+        right: 15px;
+    }
+
+    .swiper-founders__info-heading {
+        font-size: 28px;
+    }
+    
+    .swiper-founders__info-small {
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    
+    .swiper-founders__info-description {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .swiper-founders__button:nth-child(1):before {
+        content: "";
+        left: -480px;
+    }
+    
+    .swiper-founders__button:nth-child(2):before {    
+        content: "";
+        left: 440px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .swiper-founders__items {
+        height: 400px;
+    }
+
+    .swiper-founders__item {
+        width: 222px;
+    }
+
+    .swiper-founders__item.active {
+        width: 260px;
+    }
+
+    .swiper-founders__images {
+        border-radius: 10px;
+    }
+
+    .swiper-founders__mane {
+        font-size: 18px;
+        margin-top: 4px;
+    }
+
+    .swiper-description {
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    
+    .swiper-founders__info-block {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .swiper-founders__info >svg {
+        top: 8px;
+        right: 8px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .swiper-founders__info-heading {
+        font-size: 16px;
+    }
+    
+    .swiper-founders__info-small {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    
+    .swiper-founders__info-description {
+        font-size: 10px;
+        margin-top: 12px;
+        line-height: 18px;
+    }
+
+    .swiper-founders__button:nth-child(1):before {
+        content: "";
+        left: -333px;
+        top: -55px;
+        width: 25px;
+        height: 33px;
+        background-size: 25px;
+    }
+    
+    .swiper-founders__button:nth-child(2):before {    
+        content: "";
+        left: 292px;
+        top: -55px;
+        width: 25px;
+        height: 33px;
+        background-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .swiper-founders__button:nth-child(1):before {
+        content: "";
+        left: -139px;
+        top: 142px;
+    }
+    
+    .swiper-founders__button:nth-child(2):before {    
+        content: "";
+        left: 114px;
+        top: 142px;
+    }
+}
+
+@media(max-width: 375px) {
+    .swiper-founders__items {
+        height: 350px;
+    }
+
+    .swiper-founders__item {
+        width: 190px;
+    }
+
+    .swiper-founders__item.active {
+        width: 210px;
+    }
+
+    .swiper-founders__images {
+        border-radius: 10px;
+    }
+
+    .swiper-founders__mane {
+        font-size: 15px;
+        margin-top: -5px;
+    }
+
+    .swiper-description {
+        font-size: 10px;
+        margin-top: -2px;
+    }
+
+    .swiper-founders__info >svg {
+        top: 8px;
+        right: 8px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .swiper-founders__info-heading {
+        font-size: 14px;
+    }
+    
+    .swiper-founders__info-small {
+        font-size: 10px;
+        margin-top: 1px;
+    }
+    
+    .swiper-founders__info-description {
+        font-size: 10px;
+        margin-top: 3px;
+        line-height: 18px;
+    }
+
+    .swiper-founders__button:nth-child(1):before {
+        content: "";
+        left: -116px;
+        top: 105px;
+    }
+    
+    .swiper-founders__button:nth-child(2):before {    
+        content: "";
+        left: 91px;
+        top: 105px;
+    }
 }

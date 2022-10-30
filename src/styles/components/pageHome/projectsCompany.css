@@ -265,6 +265,10 @@
         --tooltip-l-r: 27px;
         --tooltip-t: 42px
     }
+
+    .projects-company {
+        display: none;
+    }
 }
 
 @media(max-width: 375px) {

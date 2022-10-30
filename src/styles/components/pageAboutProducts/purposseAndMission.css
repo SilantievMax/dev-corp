@@ -49,11 +49,35 @@
     .purposes-mission__heading {
         font-size: 32px;
     }
-}
 
-@media (max-width: 768px) {
     .purposes-mission__list {
         flex-direction: column;
         align-items:center;
     }
+
+    .purposes-mission__images {
+        width: 183px;
+    }
+
+    .purposes-mission__item {
+        display: flex;
+        max-width: 550px;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .purposes-mission__heading {
+        text-align: start;
+        margin-top: 0;
+    }
+
+    .purposes-mission__description {
+        text-align: start;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
 }
